@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Start Bootstrap Clean Blog</title>
+    <link>https://hui305.github.io/</link>
+    <description>Recent content on Start Bootstrap Clean Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Code released under the Apache 2.0 license.</copyright>
+    <lastBuildDate>Thu, 15 Aug 2019 19:59:47 +0800</lastBuildDate>
+    
+	<atom:link href="https://hui305.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://hui305.github.io/posts/my-first-post/</link>
+      <pubDate>Thu, 15 Aug 2019 19:59:47 +0800</pubDate>
+      
+      <guid>https://hui305.github.io/posts/my-first-post/</guid>
+      <description> 大家好，我是渣渣辉。
+简介  出生地：香港 性别：男 年龄：38  演员经历  是兄弟就来啃我 是兄弟就来啃我啊 是兄弟就来啃我啊哈哈  </description>
+    </item>
+    
+  </channel>
+</rss>
