@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://hui305.github.io/sitemap.xml
