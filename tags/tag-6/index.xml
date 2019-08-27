@@ -21,17 +21,6 @@
     </item>
     
     <item>
-      <title>Jane Theme Preview</title>
-      <link>https://hui305.github.io/post/jane-theme-preview/</link>
-      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://hui305.github.io/post/jane-theme-preview/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt; is created by &lt;a href=&#34;http://daringfireball.net/&#34;&gt;Daring Fireball&lt;/a&gt;, the original guideline is &lt;a href=&#34;http://daringfireball.net/projects/markdown/syntax&#34;&gt;here&lt;/a&gt;. Its syntax, however, varies between different parsers or editors.&lt;/p&gt;
-
-&lt;p&gt;Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Shortcodes Preview</title>
       <link>https://hui305.github.io/post/shortcodes-preview/</link>
       <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
@@ -57,6 +46,17 @@
       
       <guid>https://hui305.github.io/post/shortcode-notice/</guid>
       <description>normal use Note example: {{% notice note %}} A notice disclaimer {{% /notice %}} Result: note A notice disclaimer You could custom title : {{% notice note 笔记 %}} A notice disclaimer {{% /notice %}} 笔记 A notice disclaimer tip {{% notice tip %}} A tip disclaimer {{% /tip %}} tip A tip disclaimer info {{% notice info %}} A info disclaimer {{% /notice %}} info An information</description>
+    </item>
+    
+    <item>
+      <title>Jane Theme Preview</title>
+      <link>https://hui305.github.io/post/jane-theme-preview/</link>
+      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://hui305.github.io/post/jane-theme-preview/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt; is created by &lt;a href=&#34;http://daringfireball.net/&#34;&gt;Daring Fireball&lt;/a&gt;, the original guideline is &lt;a href=&#34;http://daringfireball.net/projects/markdown/syntax&#34;&gt;here&lt;/a&gt;. Its syntax, however, varies between different parsers or editors.&lt;/p&gt;
+
+&lt;p&gt;Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving.&lt;/p&gt;</description>
     </item>
     
   </channel>

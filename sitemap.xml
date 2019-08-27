@@ -2,20 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://hui305.github.io/post/jane-theme-preview.zh-cn/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://hui305.github.io/post/jane-theme-preview/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://hui305.github.io/categories/</loc>
     <lastmod>2018-03-07T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -31,6 +17,13 @@
   
   <url>
     <loc>https://hui305.github.io/categories/index/</loc>
+    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://hui305.github.io/post/jane-theme-preview.zh-cn/</loc>
     <lastmod>2018-03-07T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -149,6 +142,13 @@
   </url>
   
   <url>
+    <loc>https://hui305.github.io/post/jane-theme-preview/</loc>
+    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://hui305.github.io/categories/english/</loc>
     <lastmod>2017-08-31T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -205,14 +205,14 @@
   </url>
   
   <url>
-    <loc>https://hui305.github.io/categories/golang/</loc>
+    <loc>https://hui305.github.io/tags/golang/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://hui305.github.io/tags/golang/</loc>
+    <loc>https://hui305.github.io/categories/golang/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
