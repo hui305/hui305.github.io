@@ -72,11 +72,11 @@
 
 &lt;h5 id=&#34;概括总结&#34;&gt;概括总结&lt;/h5&gt;
 
-&lt;p&gt;​       Spring是IOC容器，管理bean，项目启动，需要把上下文的环境搭建好。springboot为我们提供了通过注解方式，自动化去实现。&lt;/p&gt;
+&lt;p&gt;​       Spring就像一个大工厂，有不同的厂房，厂里有各种监工，管理着各种bean的生命周期。&lt;/p&gt;
 
-&lt;p&gt;spring就像一个大工厂，有不同的厂房，有各种监工，管理着各种bean。&lt;/p&gt;
+&lt;p&gt;项目启动时，需要把上下文的环境搭建好。springboot为我们提供了通过注解方式，自动化去实现。&lt;/p&gt;
 
-&lt;p&gt;springboot替我们把上下文搭建好后，我们就可以去实现自身的业务了。&lt;/p&gt;
+&lt;p&gt;上下文搭建好后，我们就可以去实现自身的业务了。&lt;/p&gt;
 
 &lt;p&gt;细节流程有待需要时再研究&lt;/p&gt;
 
