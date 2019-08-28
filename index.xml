@@ -64,7 +64,7 @@
 
 &lt;p&gt;@Target(ElementType.TYPE)   //接口、类、枚举、注解&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/9824247-7b06c3e0982092b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/543/format/webp&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;img/9824247-7b06c3e0982092b3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;如果从稍微宏观一点的角度 &lt;strong&gt;概括总结&lt;/strong&gt; 上述这一过程那就是：&lt;/p&gt;
 
