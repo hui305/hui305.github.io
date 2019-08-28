@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Shortcodes Preview - hui305</title>
+  <title>springboot 项目启动分析 - hui305</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,12 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="hui305" />
-  <meta name="description" content="What a Shortcode is Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video &amp;lt;iframes&amp;gt;) to Markdown content. We think this contradicts the beautiful simplicity of Markdown&amp;rsquo;s syntax.
-Hugo created shortcodes to circumvent these limitations.
-A shortcode is a simple snippet inside a content file that Hugo will render using a predefined template. Note that shortcodes will not work in template files. If you need the type of drop-in functionality that shortcodes provide but in a template, you most likely want a [partial template][partials] instead.
-In addition to cleaner Markdown, shortcodes can be updated any time to reflect new classes, techniques, or standards. At the point of site generation, Hugo shortcodes will easily merge in your changes. You avoid a possibly complicated search and replace operation.
-More details: https://gohugo.io/content-management/shortcodes/
-" />
+  <meta name="description" content="springboot项目和之前项目最大区别，它是通过main方法启动的。 启动类包含两个关键元素： 1.@SpringBootApplication 注解 2.SpringApplication" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -40,7 +35,7 @@ More details: https://gohugo.io/content-management/shortcodes/
 <meta name="generator" content="Hugo 0.57.2" />
 
 
-<link rel="canonical" href="https://hui305.github.io/post/shortcodes-preview/" />
+<link rel="canonical" href="https://hui305.github.io/post/springboot-%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/" />
 
 
 
@@ -62,56 +57,26 @@ More details: https://gohugo.io/content-management/shortcodes/
 
 
 
-<meta property="og:title" content="Shortcodes Preview" />
-<meta property="og:description" content="What a Shortcode is
-
-Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video &lt;iframes&gt;) to Markdown content. We think this contradicts the beautiful simplicity of Markdown&rsquo;s syntax.
-
-Hugo created shortcodes to circumvent these limitations.
-
-A shortcode is a simple snippet inside a content file that Hugo will render using a predefined template. Note that shortcodes will not work in template files. If you need the type of drop-in functionality that shortcodes provide but in a template, you most likely want a [partial template][partials] instead.
-
-In addition to cleaner Markdown, shortcodes can be updated any time to reflect new classes, techniques, or standards. At the point of site generation, Hugo shortcodes will easily merge in your changes. You avoid a possibly complicated search and replace operation.
-
-More details: https://gohugo.io/content-management/shortcodes/" />
+<meta property="og:title" content="springboot 项目启动分析" />
+<meta property="og:description" content="springboot项目和之前项目最大区别，它是通过main方法启动的。 启动类包含两个关键元素： 1.@SpringBootApplication 注解 2.SpringApplication" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://hui305.github.io/post/shortcodes-preview/" />
-<meta property="article:published_time" content="2018-03-04T16:01:23+08:00" />
-<meta property="article:modified_time" content="2018-03-05T16:01:23+08:00" />
-<meta itemprop="name" content="Shortcodes Preview">
-<meta itemprop="description" content="What a Shortcode is
-
-Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video &lt;iframes&gt;) to Markdown content. We think this contradicts the beautiful simplicity of Markdown&rsquo;s syntax.
-
-Hugo created shortcodes to circumvent these limitations.
-
-A shortcode is a simple snippet inside a content file that Hugo will render using a predefined template. Note that shortcodes will not work in template files. If you need the type of drop-in functionality that shortcodes provide but in a template, you most likely want a [partial template][partials] instead.
-
-In addition to cleaner Markdown, shortcodes can be updated any time to reflect new classes, techniques, or standards. At the point of site generation, Hugo shortcodes will easily merge in your changes. You avoid a possibly complicated search and replace operation.
-
-More details: https://gohugo.io/content-management/shortcodes/">
+<meta property="og:url" content="https://hui305.github.io/post/springboot-%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/" />
+<meta property="article:published_time" content="2019-08-27T14:55:12+08:00" />
+<meta property="article:modified_time" content="2019-08-27T14:55:12+08:00" />
+<meta itemprop="name" content="springboot 项目启动分析">
+<meta itemprop="description" content="springboot项目和之前项目最大区别，它是通过main方法启动的。 启动类包含两个关键元素： 1.@SpringBootApplication 注解 2.SpringApplication">
 
 
-<meta itemprop="datePublished" content="2018-03-04T16:01:23&#43;08:00" />
-<meta itemprop="dateModified" content="2018-03-05T16:01:23&#43;08:00" />
-<meta itemprop="wordCount" content="405">
+<meta itemprop="datePublished" content="2019-08-27T14:55:12&#43;08:00" />
+<meta itemprop="dateModified" content="2019-08-27T14:55:12&#43;08:00" />
+<meta itemprop="wordCount" content="622">
 
 
 
-<meta itemprop="keywords" content="preview,shortcodes,tag-6," />
+<meta itemprop="keywords" content="spring," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Shortcodes Preview"/>
-<meta name="twitter:description" content="What a Shortcode is
-
-Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video &lt;iframes&gt;) to Markdown content. We think this contradicts the beautiful simplicity of Markdown&rsquo;s syntax.
-
-Hugo created shortcodes to circumvent these limitations.
-
-A shortcode is a simple snippet inside a content file that Hugo will render using a predefined template. Note that shortcodes will not work in template files. If you need the type of drop-in functionality that shortcodes provide but in a template, you most likely want a [partial template][partials] instead.
-
-In addition to cleaner Markdown, shortcodes can be updated any time to reflect new classes, techniques, or standards. At the point of site generation, Hugo shortcodes will easily merge in your changes. You avoid a possibly complicated search and replace operation.
-
-More details: https://gohugo.io/content-management/shortcodes/"/>
+<meta name="twitter:title" content="springboot 项目启动分析"/>
+<meta name="twitter:description" content="springboot项目和之前项目最大区别，它是通过main方法启动的。 启动类包含两个关键元素： 1.@SpringBootApplication 注解 2.SpringApplication"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -313,16 +278,14 @@ More details: https://gohugo.io/content-management/shortcodes/"/>
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">Shortcodes Preview</h1>
+      <h1 class="post-title">springboot 项目启动分析</h1>
       
       <div class="post-meta">
-        <time datetime="2018-03-04" class="post-time">
-          2018-03-04
+        <time datetime="2019-08-27" class="post-time">
+          2019-08-27
         </time>
         <div class="post-category">
-            <a href="https://hui305.github.io/categories/docs/"> docs </a>
-            <a href="https://hui305.github.io/categories/shortcodes/"> shortcodes </a>
-            <a href="https://hui305.github.io/categories/index/"> index </a>
+            <a href="https://hui305.github.io/categories/spring/"> spring </a>
             
           </div>
         
@@ -344,17 +307,17 @@ More details: https://gohugo.io/content-management/shortcodes/"/>
 <ul>
 <li>
 <ul>
-<li><a href="#what-a-shortcode-is">What a Shortcode is</a></li>
-<li><a href="#blockquotes">blockquotes</a></li>
-<li><a href="#music">music</a></li>
-<li><a href="#gist">gist</a></li>
-<li><a href="#expand">expand</a>
+<li>
 <ul>
-<li><a href="#usage">Usage</a></li>
+<li><a href="#springbootapplication-注解">@SpringBootApplication 注解</a>
+<ul>
+<li><a href="#componentscan">@ComponentScan</a></li>
+<li><a href="#enableautoconfiguration">@EnableAutoConfiguration</a>
+<ul>
+<li><a href="#概括总结">概括总结</a></li>
 </ul></li>
-<li><a href="#youtube">youtube</a></li>
-<li><a href="#vimeo">vimeo</a></li>
-<li><a href="#youku">youku</a></li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -363,415 +326,76 @@ More details: https://gohugo.io/content-management/shortcodes/"/>
 
     
     <div class="post-content">
-      <h2 id="what-a-shortcode-is">What a Shortcode is</h2>
-
-<p>Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video <code>&lt;iframes&gt;</code>) to Markdown content. We think this contradicts the beautiful simplicity of Markdown&rsquo;s syntax.</p>
-
-<p>Hugo created <strong>shortcodes</strong> to circumvent these limitations.</p>
-
-<p>A shortcode is a simple snippet inside a content file that Hugo will render using a predefined template. Note that shortcodes will not work in template files. If you need the type of drop-in functionality that shortcodes provide but in a template, you most likely want a [partial template][partials] instead.</p>
-
-<p>In addition to cleaner Markdown, shortcodes can be updated any time to reflect new classes, techniques, or standards. At the point of site generation, Hugo shortcodes will easily merge in your changes. You avoid a possibly complicated search and replace operation.</p>
-
-<p>More details: <a href="https://gohugo.io/content-management/shortcodes/">https://gohugo.io/content-management/shortcodes/</a></p>
-
-<h2 id="blockquotes">blockquotes</h2>
-
-<p>Normal quote:
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<blockquote>
-  <p>This is a simple quote.</p>
-  <footer>
-    <strong></strong>
-    
       
-        
-      
-    
-  </footer>
-</blockquote>
-</p>
 
-<p>Quote with author:
+<p>springboot项目和之前项目最大区别，它是通过main方法启动的。</p>
 
+<p>启动类包含两个关键元素：</p>
 
+<p>1.@SpringBootApplication 注解</p>
 
+<p>2.SpringApplication类及run方法</p>
 
+<h3 id="springbootapplication-注解">@SpringBootApplication 注解</h3>
 
+<ul>
+<li>@EnableAutoConfiguration</li>
+<li>@ComponentScan</li>
+</ul>
 
+<h4 id="componentscan">@ComponentScan</h4>
 
+<p>@ComponentScan 对应于XML配置形式中的 <a href="context:component-scan">context:component-scan</a>，用于将一些标注了特定注解的bean定义批量采集注册到Spring的IoC容器之中，这些特定的注解大致包括：</p>
 
+<ul>
+<li>@Controller</li>
+<li>@Entity</li>
+<li>@Component</li>
+<li>@Service</li>
+<li>@Repository</li>
+</ul>
 
+<p>等等</p>
 
+<p>对于该注解，还可以通过 basePackages 属性来更细粒度的控制该注解的自动扫描范围，比如：</p>
 
-  
-  
-  
-  
-
-
-
-
-
-  
-
-
-<blockquote>
-  <p>This is a quote with only an Author named Author2.</p>
-  <footer>
-    <strong>Author2</strong>
-    
-      
-        
-      
-    
-  </footer>
-</blockquote>
-</p>
-
-<p>Quote with author and source:
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-
-
-
-
-
-  
-
-
-<blockquote>
-  <p>This is a quote from Author3 and source &ldquo;source.&rdquo;</p>
-  <footer>
-    <strong>Author3</strong>
-    
-      <cite>Source</cite>
-    
-  </footer>
-</blockquote>
-</p>
-
-<p>Quote with author and link:
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-
-
-
-
-
-      
-      
-      
-    
-     
-      
-    
-    
-
-    
-    
-  
-
-
-<blockquote>
-  <p>This is a quote from Author4 and links to <a href="https://www.google.com">https://www.google.com</a>.</p>
-  <footer>
-    <strong>Author4</strong>
-    
-      
-        <cite>
-          <a href="https://www.google.com" title="https://www.google.com">google.com</a> 
-        </cite>
-      
-    
-  </footer>
-</blockquote>
-</p>
-
-<p>Quote with author, link and title:
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-
-
-
-
-
-  
-
-
-<blockquote>
-  <p>This is a quote from Author5 and links to <a href="https://www.google.com">https://www.google.com</a> with title &ldquo;Google.&rdquo;</p>
-  <footer>
-    <strong>Author5</strong>
-    
-      
-        <cite>
-          <a href="https://www.google.com" title="https://www.google.com">Google</a> 
-        </cite>
-      
-    
-  </footer>
-</blockquote>
-</p>
-
-<p>Quote with author and a link longer than 32 characters, string is first cut at 32 characters then everything after the last forward slash is removed
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-
-
-
-
-
-      
-      
-      
-    
-     
-      
-    
-    
-
-    
-    
-         
-         
-         
-
-         
-        
-        
-        
-        
-      
-      
-    
-  
-
-
-<blockquote>
-  <p>This is a quote from Author5 and links to <a href="https://twitter.com/CryptoGangsta/status/716427930126196737">https://twitter.com/CryptoGangsta/status/716427930126196737</a> which is longer than 32 characters.
-  <br>And this is a new line in the quote with the HTML br tag.</p>
-  <footer>
-    <strong>Author6</strong>
-    
-      
-        <cite>
-          <a href="https://twitter.com/CryptoGangsta/status/716427930126196737" title="https://twitter.com/CryptoGangsta/status/716427930126196737">twitter.com/CryptoGangsta/...</a> 
-        </cite>
-      
-    
-  </footer>
-</blockquote>
-</p>
-
-<p>Test from the Octopress blockquote page at: <a href="http://octopress.org/docs/plugins/blockquote/">http://octopress.org/docs/plugins/blockquote/</a>
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-
-
-
-
-
-      
-      
-      
-    
-     
-      
-    
-    
-
-    
-    
-         
-         
-         
-
-         
-        
-        
-        
-        
-        
-        
-      
-      
-    
-  
-
-
-<blockquote>
-  <p>Over the past 24 hours I&rsquo;ve been reflecting on my life &amp; I&rsquo;ve realized only one thing. I need a medieval battle axe.</p>
-  <footer>
-    <strong>@allanbranch</strong>
-    
-      
-        <cite>
-          <a href="https://twitter.com/allanbranch/status/90766146063712256" title="https://twitter.com/allanbranch/status/90766146063712256">twitter.com/allanbranch/status/...</a> 
-        </cite>
-      
-    
-  </footer>
-</blockquote>
-</p>
-
-<h2 id="music">music</h2>
-
-<p><iframe style="max-width: 100%"
-      class="music163"
-      frameborder="no"
-      border="0"
-      marginwidth="0"
-      marginheight="0"
-      width="330"
-      height="86"
-      src="//music.163.com/outchain/player?type=2&id=3950552&auto=0&height=66">
-    </iframe></p>
-
-<h2 id="gist">gist</h2>
-
-<p>We can embed the gist in our content via username and gist ID pulled from the URL:</p>
-
-<pre><code>{{&lt; gist spf13 7896402 &gt;}}
+<pre><code>@ComponentScan(basePackages = {&quot;cn.codesheep.controller&quot;,&quot;cn.codesheep.entity&quot;})
 </code></pre>
 
-<p>Display:</p>
+<h4 id="enableautoconfiguration">@EnableAutoConfiguration</h4>
 
-<script type="application/javascript" src="https://gist.github.com/spf13/7896402.js"></script>
+<p>重点分析下@EnableAutoConfiguration</p>
 
+<p><img src="/img/1566873722254.png" alt="1566873722254" /></p>
 
-<h2 id="expand">expand</h2>
+<p>@Target：定义注解的作用目标</p>
 
-<p>The Expand shortcode displays an expandable/collapsible section of text on your page. Here is an example</p>
+<p>@Target(ElementType.TYPE)   //接口、类、枚举、注解</p>
 
-<details>
-  <summary style="background-color:#f5f5f5;border:1px solid #ccc;padding:5px;">
-    Is this learn theme rocks ?
-    
-  </summary>
-  
-Yes !.
+<p><img src="https://upload-images.jianshu.io/upload_images/9824247-7b06c3e0982092b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/543/format/webp" alt="img" /></p>
 
-</details>
+<p>如果从稍微宏观一点的角度 <strong>概括总结</strong> 上述这一过程那就是：</p>
 
+<p>从 ClassPath下扫描所有的 META-INF/spring.factories 配置文件，并将spring.factories 文件中的 EnableAutoConfiguration 对应的配置项通过反射机制实例化为对应标注了 @Configuration 的形式的IoC容器配置类，然后注入IoC容器。</p>
 
-<h3 id="usage">Usage</h3>
+<h5 id="概括总结">概括总结</h5>
 
-<p>this shortcode takes exactly one optional parameter to define the text that appears next to the expand/collapse icon. (default is “Click to expand”)</p>
+<p>​       Spring是IOC容器，管理bean，项目启动，需要把上下文的环境搭建好。springboot为我们提供了通过注解方式，自动化去实现。</p>
 
-<pre><code>{{&lt; expand &quot;Is this learn theme rocks ?&quot; &gt;}}
-Yes !.
-{{&lt; /expand &gt;}}
-</code></pre>
+<p>spring就像一个大工厂，有不同的厂房，有各种监工，管理着各种bean。</p>
 
-<h2 id="youtube">youtube</h2>
+<p>springboot替我们把上下文搭建好后，我们就可以去实现自身的业务了。</p>
 
+<p>细节流程有待需要时再研究</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/w7Ft2ymGmfc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+<p><img src="/img/6912735-51aa162747fcdc3d.png" alt="" /></p>
 
+<p><a href="http://www.javacoder.cn/?p=1253">Spring Boot启动源码分析</a></p>
 
-<h2 id="vimeo">vimeo</h2>
+<p><a href="https://www.jianshu.com/p/9dc7a385d19e">Spring Boot 中 @SpringBootApplication注解背后的三体结构探秘</a></p>
 
+<p><a href="https://blog.csdn.net/panchao888888/article/details/82882279">Spring中@Import注解的作用和使用</a></p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//player.vimeo.com/video/146022717" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
- </div>
-
-
-<h2 id="youku">youku</h2>
-
-
-
-<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-    <iframe src="https://player.youku.com/embed/XMzQ0ODUxMjM2NA?autoplay=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouKu Video">
-    </iframe>
-</div>
     </div>
 
     
@@ -784,7 +408,7 @@ Yes !.
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-      2018-03-05
+      2019-08-27
       
     </span>
   </p>
@@ -801,9 +425,7 @@ Yes !.
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="https://hui305.github.io/tags/preview/">preview</a>
-          <a href="https://hui305.github.io/tags/shortcodes/">shortcodes</a>
-          <a href="https://hui305.github.io/tags/tag-6/">tag-6</a>
+          <a href="https://hui305.github.io/tags/spring/">spring</a>
           
         </div>
 

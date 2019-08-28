@@ -6,15 +6,24 @@
     <description>Recent content in Categories on hui305</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Mar 2018 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 27 Aug 2019 14:55:12 +0800</lastBuildDate>
     
 	<atom:link href="https://hui305.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>spring</title>
+      <link>https://hui305.github.io/categories/spring/</link>
+      <pubDate>Tue, 27 Aug 2019 14:55:12 +0800</pubDate>
+      
+      <guid>https://hui305.github.io/categories/spring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>docs</title>
       <link>https://hui305.github.io/categories/docs/</link>
-      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>https://hui305.github.io/categories/docs/</guid>
       <description></description>
@@ -23,7 +32,7 @@
     <item>
       <title>index</title>
       <link>https://hui305.github.io/categories/index/</link>
-      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>https://hui305.github.io/categories/index/</guid>
       <description></description>
@@ -32,7 +41,7 @@
     <item>
       <title>shortcodes</title>
       <link>https://hui305.github.io/categories/shortcodes/</link>
-      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>https://hui305.github.io/categories/shortcodes/</guid>
       <description></description>
