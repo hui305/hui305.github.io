@@ -6,10 +6,25 @@
     <description>Recent content on hui305</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Aug 2019 14:55:12 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2020 18:35:23 +0800</lastBuildDate>
     
         <atom:link href="https://hui305.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test</title>
+      <link>https://hui305.github.io/post/test/</link>
+      <pubDate>Thu, 26 Nov 2020 18:35:23 +0800</pubDate>
+      
+      <guid>https://hui305.github.io/post/test/</guid>
+      
+        <description>&lt;p&gt;ddddad fhell
+ddddad fhell
+ddddad fhell
+ddddad fhell&lt;/p&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>springboot 项目启动分析1111</title>
