@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hui305</title>
@@ -12,33 +12,23 @@
     
     
     <item>
-      <title>springboot 项目启动分析</title>
+      <title>springboot 项目启动分析1111</title>
       <link>https://hui305.github.io/post/springboot-%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/</link>
       <pubDate>Tue, 27 Aug 2019 14:55:12 +0800</pubDate>
       
       <guid>https://hui305.github.io/post/springboot-%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/</guid>
       
-        <description>
-
-&lt;p&gt;springboot项目和之前项目最大区别，它是通过main方法启动的。&lt;/p&gt;
-
+        <description>&lt;p&gt;springboot项目和之前项目最大区别，它是通过main方法启动的。&lt;/p&gt;
 &lt;p&gt;启动类包含两个关键元素：&lt;/p&gt;
-
 &lt;p&gt;1.@SpringBootApplication 注解&lt;/p&gt;
-
 &lt;p&gt;2.SpringApplication类及run方法&lt;/p&gt;
-
 &lt;h3 id=&#34;springbootapplication-注解&#34;&gt;@SpringBootApplication 注解&lt;/h3&gt;
-
 &lt;ul&gt;
 &lt;li&gt;@EnableAutoConfiguration&lt;/li&gt;
 &lt;li&gt;@ComponentScan&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h4 id=&#34;componentscan&#34;&gt;@ComponentScan&lt;/h4&gt;
-
 &lt;p&gt;@ComponentScan 对应于XML配置形式中的 &lt;a href=&#34;context:component-scan&#34;&gt;context:component-scan&lt;/a&gt;，用于将一些标注了特定注解的bean定义批量采集注册到Spring的IoC容器之中，这些特定的注解大致包括：&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;@Controller&lt;/li&gt;
 &lt;li&gt;@Entity&lt;/li&gt;
@@ -46,46 +36,25 @@
 &lt;li&gt;@Service&lt;/li&gt;
 &lt;li&gt;@Repository&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;等等&lt;/p&gt;
-
 &lt;p&gt;对于该注解，还可以通过 basePackages 属性来更细粒度的控制该注解的自动扫描范围，比如：&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;@ComponentScan(basePackages = {&amp;quot;cn.codesheep.controller&amp;quot;,&amp;quot;cn.codesheep.entity&amp;quot;})
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;enableautoconfiguration&#34;&gt;@EnableAutoConfiguration&lt;/h4&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;enableautoconfiguration&#34;&gt;@EnableAutoConfiguration&lt;/h4&gt;
 &lt;p&gt;重点分析下@EnableAutoConfiguration&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://hui305.github.io/img/1566873722254.png&#34; alt=&#34;1566873722254&#34; /&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;img src=&#34;https://hui305.github.io/img/1566873722254.png&#34; alt=&#34;1566873722254&#34;&gt;&lt;/p&gt;
 &lt;p&gt;@Target：定义注解的作用目标&lt;/p&gt;
-
 &lt;p&gt;@Target(ElementType.TYPE)   //接口、类、枚举、注解&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://hui305.github.io/img/9824247.png&#34; alt=&#34;9824247&#34; /&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;img src=&#34;https://hui305.github.io/img/9824247.png&#34; alt=&#34;9824247&#34;&gt;&lt;/p&gt;
 &lt;p&gt;如果从稍微宏观一点的角度 &lt;strong&gt;概括总结&lt;/strong&gt; 上述这一过程那就是：&lt;/p&gt;
-
 &lt;p&gt;从 ClassPath下扫描所有的 META-INF/spring.factories 配置文件，并将spring.factories 文件中的 EnableAutoConfiguration 对应的配置项通过反射机制实例化为对应标注了 @Configuration 的形式的IoC容器配置类，然后注入IoC容器。&lt;/p&gt;
-
 &lt;h5 id=&#34;概括总结&#34;&gt;概括总结&lt;/h5&gt;
-
-&lt;p&gt;​       Spring就像一个大工厂，有不同的厂房，厂里有各种监工，管理着各种bean的生命周期。&lt;/p&gt;
-
+&lt;p&gt;​		Spring就像一个大工厂，有不同的厂房，厂里有各种监工，管理着各种bean的生命周期。&lt;/p&gt;
 &lt;p&gt;项目启动时，需要把上下文的环境搭建好。springboot为我们提供了通过注解方式，自动化去实现。&lt;/p&gt;
-
 &lt;p&gt;上下文搭建好后，我们就可以去实现自身的业务了。&lt;/p&gt;
-
 &lt;p&gt;细节流程有待需要时再研究&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://hui305.github.io/img/6912735-51aa162747fcdc3d.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;img src=&#34;https://hui305.github.io/img/6912735-51aa162747fcdc3d.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.javacoder.cn/?p=1253&#34;&gt;Spring Boot启动源码分析&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;&lt;a href=&#34;https://www.jianshu.com/p/9dc7a385d19e&#34;&gt;Spring Boot 中 @SpringBootApplication注解背后的三体结构探秘&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/panchao888888/article/details/82882279&#34;&gt;Spring中@Import注解的作用和使用&lt;/a&gt;&lt;/p&gt;
 </description>
       

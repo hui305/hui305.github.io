@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>springboot 项目启动分析 - hui305</title>
+  <title>springboot 项目启动分析1111 - hui305</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -32,10 +32,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.57.2" />
+<meta name="generator" content="Hugo 0.78.2" />
 
 
 <link rel="canonical" href="https://hui305.github.io/post/springboot-%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/" />
+
+
 
 
 
@@ -51,31 +53,29 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.31c4b7729c8d71cc152f8de4203d90bfd8a04f7eab69372de7234ebf55b7701b.css" integrity="sha256-McS3cpyNccwVL43kID2Qv9igT36raTct5yNOv1W3cBs=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.f1e506a781bf25d33ffc18aa6b4e972a965c58049d27d4f92b7db2e9bf28e4bf.css" integrity="sha256-8eUGp4G/JdM//Biqa06XKpZcWASdJ9T5K32y6b8o5L8=" media="screen" crossorigin="anonymous">
 
 
 
 
 
-<meta property="og:title" content="springboot 项目启动分析" />
+<meta property="og:title" content="springboot 项目启动分析1111" />
 <meta property="og:description" content="springboot项目和之前项目最大区别，它是通过main方法启动的。 启动类包含两个关键元素： 1.@SpringBootApplication 注解 2.SpringApplication" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hui305.github.io/post/springboot-%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/" />
 <meta property="article:published_time" content="2019-08-27T14:55:12+08:00" />
 <meta property="article:modified_time" content="2019-08-27T14:55:12+08:00" />
-<meta itemprop="name" content="springboot 项目启动分析">
+<meta itemprop="name" content="springboot 项目启动分析1111">
 <meta itemprop="description" content="springboot项目和之前项目最大区别，它是通过main方法启动的。 启动类包含两个关键元素： 1.@SpringBootApplication 注解 2.SpringApplication">
-
-
-<meta itemprop="datePublished" content="2019-08-27T14:55:12&#43;08:00" />
-<meta itemprop="dateModified" content="2019-08-27T14:55:12&#43;08:00" />
+<meta itemprop="datePublished" content="2019-08-27T14:55:12+08:00" />
+<meta itemprop="dateModified" content="2019-08-27T14:55:12+08:00" />
 <meta itemprop="wordCount" content="596">
 
 
 
 <meta itemprop="keywords" content="spring," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="springboot 项目启动分析"/>
+<meta name="twitter:title" content="springboot 项目启动分析1111"/>
 <meta name="twitter:description" content="springboot项目和之前项目最大区别，它是通过main方法启动的。 启动类包含两个关键元素： 1.@SpringBootApplication 注解 2.SpringApplication"/>
 
 <!--[if lte IE 9]>
@@ -278,7 +278,7 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">springboot 项目启动分析</h1>
+      <h1 class="post-title">springboot 项目启动分析1111</h1>
       
       <div class="post-meta">
         <time datetime="2019-08-27" class="post-time">
@@ -304,49 +304,30 @@
   <h2 class="post-toc-title">Table of Contents</h2>
   <div class="post-toc-content">
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#springbootapplication-注解">@SpringBootApplication 注解</a>
-<ul>
-<li><a href="#componentscan">@ComponentScan</a></li>
-<li><a href="#enableautoconfiguration">@EnableAutoConfiguration</a>
-<ul>
-<li><a href="#概括总结">概括总结</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#springbootapplication-注解">@SpringBootApplication 注解</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
   </div>
 </div>
 
     
     <div class="post-content">
-      
-
-<p>springboot项目和之前项目最大区别，它是通过main方法启动的。</p>
-
+      <p>springboot项目和之前项目最大区别，它是通过main方法启动的。</p>
 <p>启动类包含两个关键元素：</p>
-
 <p>1.@SpringBootApplication 注解</p>
-
 <p>2.SpringApplication类及run方法</p>
-
 <h3 id="springbootapplication-注解">@SpringBootApplication 注解</h3>
-
 <ul>
 <li>@EnableAutoConfiguration</li>
 <li>@ComponentScan</li>
 </ul>
-
 <h4 id="componentscan">@ComponentScan</h4>
-
 <p>@ComponentScan 对应于XML配置形式中的 <a href="context:component-scan">context:component-scan</a>，用于将一些标注了特定注解的bean定义批量采集注册到Spring的IoC容器之中，这些特定的注解大致包括：</p>
-
 <ul>
 <li>@Controller</li>
 <li>@Entity</li>
@@ -354,46 +335,25 @@
 <li>@Service</li>
 <li>@Repository</li>
 </ul>
-
 <p>等等</p>
-
 <p>对于该注解，还可以通过 basePackages 属性来更细粒度的控制该注解的自动扫描范围，比如：</p>
-
 <pre><code>@ComponentScan(basePackages = {&quot;cn.codesheep.controller&quot;,&quot;cn.codesheep.entity&quot;})
-</code></pre>
-
-<h4 id="enableautoconfiguration">@EnableAutoConfiguration</h4>
-
+</code></pre><h4 id="enableautoconfiguration">@EnableAutoConfiguration</h4>
 <p>重点分析下@EnableAutoConfiguration</p>
-
-<p><img src="/img/1566873722254.png" alt="1566873722254" /></p>
-
+<p><img src="/img/1566873722254.png" alt="1566873722254"></p>
 <p>@Target：定义注解的作用目标</p>
-
 <p>@Target(ElementType.TYPE)   //接口、类、枚举、注解</p>
-
-<p><img src="/img/9824247.png" alt="9824247" /></p>
-
+<p><img src="/img/9824247.png" alt="9824247"></p>
 <p>如果从稍微宏观一点的角度 <strong>概括总结</strong> 上述这一过程那就是：</p>
-
 <p>从 ClassPath下扫描所有的 META-INF/spring.factories 配置文件，并将spring.factories 文件中的 EnableAutoConfiguration 对应的配置项通过反射机制实例化为对应标注了 @Configuration 的形式的IoC容器配置类，然后注入IoC容器。</p>
-
 <h5 id="概括总结">概括总结</h5>
-
-<p>​       Spring就像一个大工厂，有不同的厂房，厂里有各种监工，管理着各种bean的生命周期。</p>
-
+<p>​		Spring就像一个大工厂，有不同的厂房，厂里有各种监工，管理着各种bean的生命周期。</p>
 <p>项目启动时，需要把上下文的环境搭建好。springboot为我们提供了通过注解方式，自动化去实现。</p>
-
 <p>上下文搭建好后，我们就可以去实现自身的业务了。</p>
-
 <p>细节流程有待需要时再研究</p>
-
-<p><img src="/img/6912735-51aa162747fcdc3d.png" alt="" /></p>
-
+<p><img src="/img/6912735-51aa162747fcdc3d.png" alt=""></p>
 <p><a href="http://www.javacoder.cn/?p=1253">Spring Boot启动源码分析</a></p>
-
 <p><a href="https://www.jianshu.com/p/9dc7a385d19e">Spring Boot 中 @SpringBootApplication注解背后的三体结构探秘</a></p>
-
 <p><a href="https://blog.csdn.net/panchao888888/article/details/82882279">Spring中@Import注解的作用和使用</a></p>
 
     </div>
@@ -455,6 +415,8 @@
   
 
     
+
+  
 
         </div>
       </div>
@@ -556,7 +518,13 @@
 
 
 
-<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+
+
+
+
+
+
 
 
 
