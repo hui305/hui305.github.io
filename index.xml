@@ -6,10 +6,38 @@
     <description>Recent content on hui305</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Aug 2019 14:55:12 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 23 Oct 2021 22:00:40 +0800</lastBuildDate>
     
         <atom:link href="https://hui305.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java面试</title>
+      <link>https://hui305.github.io/post/java%E9%9D%A2%E8%AF%95/</link>
+      <pubDate>Sat, 23 Oct 2021 22:00:40 +0800</pubDate>
+      
+      <guid>https://hui305.github.io/post/java%E9%9D%A2%E8%AF%95/</guid>
+      
+        <description>&lt;h3 id=&#34;项目经验&#34;&gt;项目经验&lt;/h3&gt;
+&lt;p&gt;1）最近做什么项目？&lt;/p&gt;
+&lt;p&gt;2）具体负责哪些工作？&lt;/p&gt;
+&lt;p&gt;3）用到什么技术、组件、框架等？&lt;/p&gt;
+&lt;p&gt;根据回答，再问以下问题。&lt;/p&gt;
+&lt;h3 id=&#34;java基础&#34;&gt;java基础&lt;/h3&gt;
+&lt;h5 id=&#34;集合&#34;&gt;集合&lt;/h5&gt;
+&lt;p&gt;1）jdk1.8 hashmap的数据结构是什么？ （必会）&lt;/p&gt;
+&lt;p&gt;2）arraylist和linkedlist区别是什么？       （必会）&lt;/p&gt;
+&lt;p&gt;3）String str =“123“， String str = new String（”123）有什么区别？（必会）&lt;/p&gt;
+&lt;p&gt;4）&lt;/p&gt;
+&lt;h5 id=&#34;并发&#34;&gt;并发&lt;/h5&gt;
+&lt;h5 id=&#34;jvm&#34;&gt;jvm&lt;/h5&gt;
+&lt;h3 id=&#34;数据库-mysql为主&#34;&gt;数据库 mysql为主&lt;/h3&gt;
+&lt;h3 id=&#34;缓存-redis&#34;&gt;缓存 redis&lt;/h3&gt;
+&lt;h3 id=&#34;框架分布式微服务&#34;&gt;框架，分布式，微服务&lt;/h3&gt;
+&lt;h3 id=&#34;算法题&#34;&gt;算法题&lt;/h3&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>springboot 项目启动分析</title>
@@ -38,7 +66,7 @@
 &lt;/ul&gt;
 &lt;p&gt;等等&lt;/p&gt;
 &lt;p&gt;对于该注解，还可以通过 basePackages 属性来更细粒度的控制该注解的自动扫描范围，比如：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;@ComponentScan(basePackages = {&amp;quot;cn.codesheep.controller&amp;quot;,&amp;quot;cn.codesheep.entity&amp;quot;})
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;@ComponentScan(basePackages = {&amp;quot;cn.codesheep.controller&amp;quot;,&amp;quot;cn.codesheep.entity&amp;quot;})
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;enableautoconfiguration&#34;&gt;@EnableAutoConfiguration&lt;/h4&gt;
 &lt;p&gt;重点分析下@EnableAutoConfiguration&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://hui305.github.io/img/1566873722254.png&#34; alt=&#34;1566873722254&#34;&gt;&lt;/p&gt;

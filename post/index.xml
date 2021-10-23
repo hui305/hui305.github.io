@@ -6,7 +6,16 @@
     <description>Recent content in Posts on hui305</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Aug 2019 14:55:12 +0800</lastBuildDate><atom:link href="https://hui305.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Oct 2021 22:00:40 +0800</lastBuildDate><atom:link href="https://hui305.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java面试</title>
+      <link>https://hui305.github.io/post/java%E9%9D%A2%E8%AF%95/</link>
+      <pubDate>Sat, 23 Oct 2021 22:00:40 +0800</pubDate>
+      
+      <guid>https://hui305.github.io/post/java%E9%9D%A2%E8%AF%95/</guid>
+      <description>项目经验 1）最近做什么项目？ 2）具体负责哪些工作？ 3）用到什么技术、组件、框架等？ 根据回答，再问以下问题。 java基础 集合 1）jdk1.8 h</description>
+    </item>
+    
     <item>
       <title>springboot 项目启动分析</title>
       <link>https://hui305.github.io/post/springboot-%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/</link>

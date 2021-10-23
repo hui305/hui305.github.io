@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java on hui305</title>
+    <link>https://hui305.github.io/tags/java/</link>
+    <description>Recent content in java on hui305</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 23 Oct 2021 22:00:40 +0800</lastBuildDate><atom:link href="https://hui305.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java面试</title>
+      <link>https://hui305.github.io/post/java%E9%9D%A2%E8%AF%95/</link>
+      <pubDate>Sat, 23 Oct 2021 22:00:40 +0800</pubDate>
+      
+      <guid>https://hui305.github.io/post/java%E9%9D%A2%E8%AF%95/</guid>
+      <description>项目经验 1）最近做什么项目？ 2）具体负责哪些工作？ 3）用到什么技术、组件、框架等？ 根据回答，再问以下问题。 java基础 集合 1）jdk1.8 h</description>
+    </item>
+    
+  </channel>
+</rss>
