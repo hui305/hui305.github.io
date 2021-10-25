@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>algo on hui305</title>
+    <link>https://hui305.github.io/categories/algo/</link>
+    <description>Recent content in algo on hui305</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 Oct 2021 20:34:53 +0800</lastBuildDate><atom:link href="https://hui305.github.io/categories/algo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leetcode第一题和第三题解析</title>
+      <link>https://hui305.github.io/post/leetcode%E7%AC%AC%E4%B8%80%E9%A2%98%E5%92%8C%E7%AC%AC%E4%B8%89%E9%A2%98%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Mon, 25 Oct 2021 20:34:53 +0800</pubDate>
+      
+      <guid>https://hui305.github.io/post/leetcode%E7%AC%AC%E4%B8%80%E9%A2%98%E5%92%8C%E7%AC%AC%E4%B8%89%E9%A2%98%E8%A7%A3%E6%9E%90/</guid>
+      <description>第一题 两数之和 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的那 两个 整数，并返回它们的数组下标。 你可以假设每</description>
+    </item>
+    
+  </channel>
+</rss>
