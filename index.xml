@@ -18,7 +18,83 @@
       
       <guid>https://hui305.github.io/post/leetcode%E7%AC%AC%E4%B8%80%E9%A2%98%E5%92%8C%E7%AC%AC%E4%B8%89%E9%A2%98%E8%A7%A3%E6%9E%90/</guid>
       
-        <description>第一题 两数之和 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的那 两个 整数，并返回它们的数组下标。 你可以假设每</description>
+        <description>&lt;p&gt;&lt;img src=&#34;https://hui305.github.io/img/camp1280.jpg&#34; alt=&#34;camp1280&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;第一题-两数之和&#34;&gt;第一题 两数之和&lt;/h3&gt;
+&lt;p&gt;给定一个整数数组 &lt;code&gt;nums&lt;/code&gt; 和一个整数目标值 &lt;code&gt;target&lt;/code&gt;，请你在该数组中找出 &lt;strong&gt;和为目标值&lt;/strong&gt; &lt;em&gt;&lt;code&gt;target&lt;/code&gt;&lt;/em&gt; 的那 &lt;strong&gt;两个&lt;/strong&gt; 整数，并返回它们的数组下标。&lt;/p&gt;
+&lt;p&gt;你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。&lt;/p&gt;
+&lt;p&gt;你可以按任意顺序返回答案。&lt;/p&gt;
+&lt;p&gt;示例 1：&lt;/p&gt;
+&lt;p&gt;输入：nums = [2,7,11,15], target = 9
+输出：[0,1]
+解释：因为 nums[0] + nums[1] == 9 ，返回 [0, 1] 。
+示例 2：&lt;/p&gt;
+&lt;p&gt;输入：nums = [3,2,4], target = 6
+输出：[1,2]
+示例 3：&lt;/p&gt;
+&lt;p&gt;输入：nums = [3,3], target = 6
+输出：[0,1]&lt;/p&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;p&gt;2 &amp;lt;= nums.length &amp;lt;= 104
+-109 &amp;lt;= nums[i] &amp;lt;= 109
+-109 &amp;lt;= target &amp;lt;= 109
+只会存在一个有效答案
+进阶：你可以想出一个时间复杂度小于 O(n2) 的算法吗？&lt;/p&gt;
+&lt;p&gt;解题：&lt;/p&gt;
+&lt;p&gt;首先想到的是 两层循环遍历，第一层取一个数，然后第二层，这个数后面的数逐个和这个数相加&lt;/p&gt;
+&lt;p&gt;看是否等于目标值！&lt;/p&gt;
+&lt;p&gt;例如:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;nums&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;++){&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; j &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;j&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt;nums&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;j&lt;span style=&#34;color:#f92672&#34;&gt;++){&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;nums&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;]+&lt;/span&gt;nums&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;j&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; target&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[]{&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;j&lt;span style=&#34;color:#f92672&#34;&gt;};&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;时间复杂度为O(n^2);&lt;/p&gt;
+&lt;p&gt;更好的性能的解法是：利用map，空间换时间&lt;/p&gt;
+&lt;p&gt;具体定义一个map，key为nums的值，value为数组的index&lt;/p&gt;
+&lt;p&gt;例如 array[0] = 1 就是 map.put(1,0)&lt;/p&gt;
+&lt;p&gt;然后遍历数组，使用map.containsKey()查找&lt;/p&gt;
+&lt;p&gt;具体如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;map&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;put&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;array&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;],&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;array&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;++){&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;map&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;containsKey&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;target&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;array&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;])){&lt;/span&gt;
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[]{&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;map&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;target&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;array&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;])};&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这样的话，时间复杂度就降为O(n)&lt;/p&gt;
+&lt;h3 id=&#34;第三题--无重复字符的最长子串&#34;&gt;第三题  无重复字符的最长子串&lt;/h3&gt;
+&lt;p&gt;给定一个字符串 &lt;code&gt;s&lt;/code&gt; ，请你找出其中不含有重复字符的 &lt;strong&gt;最长子串&lt;/strong&gt; 的长度。&lt;/p&gt;
+&lt;p&gt;示例 1:&lt;/p&gt;
+&lt;p&gt;输入: s = &amp;ldquo;abcabcbb&amp;rdquo;
+输出: 3
+解释: 因为无重复字符的最长子串是 &amp;ldquo;abc&amp;rdquo;，所以其长度为 3。&lt;/p&gt;
+&lt;p&gt;示例 2:&lt;/p&gt;
+&lt;p&gt;输入: s = &amp;ldquo;bbbbb&amp;rdquo;
+输出: 1
+解释: 因为无重复字符的最长子串是 &amp;ldquo;b&amp;rdquo;，所以其长度为 1。&lt;/p&gt;
+&lt;p&gt;示例 3:&lt;/p&gt;
+&lt;p&gt;输入: s = &amp;ldquo;pwwkew&amp;rdquo;
+输出: 3
+解释: 因为无重复字符的最长子串是 &amp;ldquo;wke&amp;rdquo;，所以其长度为 3。
+请注意，你的答案必须是 子串 的长度，&amp;ldquo;pwke&amp;rdquo; 是一个子序列，不是子串。&lt;/p&gt;
+&lt;p&gt;示例 4:&lt;/p&gt;
+&lt;p&gt;输入: s = &amp;quot;&amp;quot;
+输出: 0&lt;/p&gt;
+&lt;p&gt;提示：&lt;/p&gt;
+&lt;p&gt;0 &amp;lt;= s.length &amp;lt;= 5 * 104
+s 由英文字母、数字、符号和空格组成&lt;/p&gt;
+&lt;p&gt;线性结构！从左到右！不重复子串是连续的！&lt;/p&gt;
+&lt;p&gt;计算长度，需要相对位置，开始位置，结束位置。&lt;/p&gt;
+&lt;p&gt;如果是用C语言，会想到用两个指针，start end。&lt;/p&gt;
+&lt;p&gt;end只会逐个递增，所以用遍历就行。&lt;/p&gt;
+&lt;p&gt;start会随着end的遍历而变化，遇到重复，就在之前那个字符出现位置+1&lt;/p&gt;
+&lt;p&gt;我们以 abcabcbb为例，一开始 start end都在a（0）位置。然后end向右递增，&lt;/p&gt;
+&lt;p&gt;直到（3）位置，a重复，start移到第一个a位置+1；0+1即b（1）位置。&lt;/p&gt;
+&lt;p&gt;这里我们要记录字符上一次出现的位置信息。题目规定 s 由英文字母、数字、符号和空格组成&lt;/p&gt;
+&lt;p&gt;ASCII码128个。用int数组来解决。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt; last &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;128&lt;span style=&#34;color:#f92672&#34;&gt;];&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;128&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;++)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       
     </item>
     
@@ -29,7 +105,24 @@
       
       <guid>https://hui305.github.io/post/java%E9%9D%A2%E8%AF%95/</guid>
       
-        <description>项目经验 1）最近做什么项目？ 2）具体负责哪些工作？ 3）用到什么技术、组件、框架等？ 根据回答，再问以下问题。 java基础 集合 1）jdk1.8 h</description>
+        <description>&lt;h3 id=&#34;项目经验&#34;&gt;项目经验&lt;/h3&gt;
+&lt;p&gt;1）最近做什么项目？&lt;/p&gt;
+&lt;p&gt;2）具体负责哪些工作？&lt;/p&gt;
+&lt;p&gt;3）用到什么技术、组件、框架等？&lt;/p&gt;
+&lt;p&gt;根据回答，再问以下问题。&lt;/p&gt;
+&lt;h3 id=&#34;java基础&#34;&gt;java基础&lt;/h3&gt;
+&lt;h5 id=&#34;集合&#34;&gt;集合&lt;/h5&gt;
+&lt;p&gt;1）jdk1.8 hashmap的数据结构是什么？ （必会）&lt;/p&gt;
+&lt;p&gt;2）arraylist和linkedlist区别是什么？       （必会）&lt;/p&gt;
+&lt;p&gt;3）String str =“123“， String str = new String（”123）有什么区别？（必会）&lt;/p&gt;
+&lt;p&gt;4）&lt;/p&gt;
+&lt;h5 id=&#34;并发&#34;&gt;并发&lt;/h5&gt;
+&lt;h5 id=&#34;jvm&#34;&gt;jvm&lt;/h5&gt;
+&lt;h3 id=&#34;数据库-mysql为主&#34;&gt;数据库 mysql为主&lt;/h3&gt;
+&lt;h3 id=&#34;缓存-redis&#34;&gt;缓存 redis&lt;/h3&gt;
+&lt;h3 id=&#34;框架分布式微服务&#34;&gt;框架，分布式，微服务&lt;/h3&gt;
+&lt;h3 id=&#34;算法题&#34;&gt;算法题&lt;/h3&gt;
+</description>
       
     </item>
     
@@ -40,7 +133,45 @@
       
       <guid>https://hui305.github.io/post/springboot-%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/</guid>
       
-        <description>springboot项目和之前项目最大区别，它是通过main方法启动的。 启动类包含两个关键元素： 1.@SpringBootApplication 注解 2.SpringApplication</description>
+        <description>&lt;p&gt;springboot项目和之前项目最大区别，它是通过main方法启动的。&lt;/p&gt;
+&lt;p&gt;启动类包含两个关键元素：&lt;/p&gt;
+&lt;p&gt;1.@SpringBootApplication 注解&lt;/p&gt;
+&lt;p&gt;2.SpringApplication类及run方法&lt;/p&gt;
+&lt;h3 id=&#34;springbootapplication-注解&#34;&gt;@SpringBootApplication 注解&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;@EnableAutoConfiguration&lt;/li&gt;
+&lt;li&gt;@ComponentScan&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;componentscan&#34;&gt;@ComponentScan&lt;/h4&gt;
+&lt;p&gt;@ComponentScan 对应于XML配置形式中的 &lt;a href=&#34;context:component-scan&#34;&gt;context:component-scan&lt;/a&gt;，用于将一些标注了特定注解的bean定义批量采集注册到Spring的IoC容器之中，这些特定的注解大致包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;@Controller&lt;/li&gt;
+&lt;li&gt;@Entity&lt;/li&gt;
+&lt;li&gt;@Component&lt;/li&gt;
+&lt;li&gt;@Service&lt;/li&gt;
+&lt;li&gt;@Repository&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;等等&lt;/p&gt;
+&lt;p&gt;对于该注解，还可以通过 basePackages 属性来更细粒度的控制该注解的自动扫描范围，比如：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;@ComponentScan(basePackages = {&amp;quot;cn.codesheep.controller&amp;quot;,&amp;quot;cn.codesheep.entity&amp;quot;})
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;enableautoconfiguration&#34;&gt;@EnableAutoConfiguration&lt;/h4&gt;
+&lt;p&gt;重点分析下@EnableAutoConfiguration&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hui305.github.io/img/1566873722254.png&#34; alt=&#34;1566873722254&#34;&gt;&lt;/p&gt;
+&lt;p&gt;@Target：定义注解的作用目标&lt;/p&gt;
+&lt;p&gt;@Target(ElementType.TYPE)   //接口、类、枚举、注解&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hui305.github.io/img/9824247.png&#34; alt=&#34;9824247&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果从稍微宏观一点的角度 &lt;strong&gt;概括总结&lt;/strong&gt; 上述这一过程那就是：&lt;/p&gt;
+&lt;p&gt;从 ClassPath下扫描所有的 META-INF/spring.factories 配置文件，并将spring.factories 文件中的 EnableAutoConfiguration 对应的配置项通过反射机制实例化为对应标注了 @Configuration 的形式的IoC容器配置类，然后注入IoC容器。&lt;/p&gt;
+&lt;h5 id=&#34;概括总结&#34;&gt;概括总结&lt;/h5&gt;
+&lt;p&gt;​		Spring就像一个大工厂，有不同的厂房，厂里有各种监工，管理着各种bean的生命周期。&lt;/p&gt;
+&lt;p&gt;项目启动时，需要把上下文的环境搭建好。springboot为我们提供了通过注解方式，自动化去实现。&lt;/p&gt;
+&lt;p&gt;上下文搭建好后，我们就可以去实现自身的业务了。&lt;/p&gt;
+&lt;p&gt;细节流程有待需要时再研究&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hui305.github.io/img/6912735-51aa162747fcdc3d.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.javacoder.cn/?p=1253&#34;&gt;Spring Boot启动源码分析&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.jianshu.com/p/9dc7a385d19e&#34;&gt;Spring Boot 中 @SpringBootApplication注解背后的三体结构探秘&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/panchao888888/article/details/82882279&#34;&gt;Spring中@Import注解的作用和使用&lt;/a&gt;&lt;/p&gt;
+</description>
       
     </item>
     
