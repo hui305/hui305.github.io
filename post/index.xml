@@ -18,20 +18,101 @@
     
     <item>
       <title>Java面试</title>
-      <link>https://hui305.github.io/post/java%E9%9D%A2%E8%AF%95/</link>
+      <link>https://hui305.github.io/post/interview/java%E9%9D%A2%E8%AF%95/</link>
       <pubDate>Sat, 23 Oct 2021 22:00:40 +0800</pubDate>
       
-      <guid>https://hui305.github.io/post/java%E9%9D%A2%E8%AF%95/</guid>
-      <description>项目经验 1）最近做什么项目？ 2）具体负责哪些工作？ 3）用到什么技术、组件、框架等？ 根据回答，再问以下问题。 java基础 集合 1）jdk1.8 h</description>
+      <guid>https://hui305.github.io/post/interview/java%E9%9D%A2%E8%AF%95/</guid>
+      <description>一、个人介绍 二、项目经验 1）最近做什么项目？ 2）具体负责哪些工作？ 3）用到什么技术、组件、框架等？ 根据回答，再问以下问题。 三、java基础 集</description>
     </item>
     
     <item>
-      <title>springboot 项目启动分析</title>
-      <link>https://hui305.github.io/post/springboot-%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/</link>
-      <pubDate>Tue, 27 Aug 2019 14:55:12 +0800</pubDate>
+      <title></title>
+      <link>https://hui305.github.io/post/interview/interview-linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hui305.github.io/post/springboot-%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/</guid>
-      <description>springboot项目和之前项目最大区别，它是通过main方法启动的。 启动类包含两个关键元素： 1.@SpringBootApplication 注解 2.SpringApplication</description>
+      <guid>https://hui305.github.io/post/interview/interview-linux/</guid>
+      <description>Linux 命令 运维 devops linux查看当前登录用户 1，w,显示目前登入系统的用户信息 -f 开启或关闭显示用户从何处登入系统。 -h 不显示各栏位的标题信息列。 -l 使</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hui305.github.io/post/interview/%E4%B8%AD%E9%97%B4%E4%BB%B6%E7%A0%94%E7%A9%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hui305.github.io/post/interview/%E4%B8%AD%E9%97%B4%E4%BB%B6%E7%A0%94%E7%A9%B6/</guid>
+      <description>中间件问题研究 Exactly-Once投递语义 ​ 本文主要介绍消息队列RocketMQ版的Exactly-Once投递语义的概念和典型使用场景</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hui305.github.io/post/interview/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87-mysql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hui305.github.io/post/interview/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87-mysql/</guid>
+      <description>mysql性能调优 读写分离 1）既然是读写分离，那肯定有读库和写库，datasource配置主库master，slave 2）路由，根据规则路由</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hui305.github.io/post/interview/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87-spring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hui305.github.io/post/interview/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87-spring/</guid>
+      <description>面试准备 Spring SpringCloud多项目共享依赖、工具类以及依赖版本管理 [SpringCloud-demo] &amp;lt;dependencyManagement&amp;gt; &amp;lt;dependencies&amp;gt; &amp;lt;!-- spring-cloud --&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;spring-cloud-dependencies&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;${spring-cloud.version}&amp;lt;/version&amp;gt; &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt; &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;/dependencies&amp;gt; &amp;lt;/dependencyManagement&amp;gt; 为什么说Feign是伪RPC？ 无非也就是</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hui305.github.io/post/interview/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hui305.github.io/post/interview/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87/</guid>
+      <description>面试准备(一) 2022 2 12 一、技术 oauth2 什么是oauth2? 答：是一种授权机制，颁发令牌（token），用来授权第三方应用，获取用户数据。 RFC 6749 OAuth 引入了</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hui305.github.io/post/interview/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87%E4%B8%89dubbo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hui305.github.io/post/interview/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87%E4%B8%89dubbo/</guid>
+      <description>面试准备（三） Dubbo Dubbo SPI spi是一种插件机制 SPI 的本质是将接口实现类的全限定名配置在文件中，并由服务加载器读取配置文件，加载实现类。 这样可以在运行</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hui305.github.io/post/interview/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87%E4%BA%8C/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hui305.github.io/post/interview/%E9%9D%A2%E8%AF%95%E5%87%86%E5%A4%87%E4%BA%8C/</guid>
+      <description>面试准备（二）DDD DDD Domain-Driven Design DDD是什么？ DDD(domain driver design) 是一种业务建模的思想。一个软件的核心价值就是解决业界的核心问题。 业务模型的好坏直接关系到一个系</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hui305.github.io/post/%E6%8F%90%E9%AB%98%E6%8A%80%E6%9C%AF%E6%8E%8C%E6%8F%A1%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hui305.github.io/post/%E6%8F%90%E9%AB%98%E6%8A%80%E6%9C%AF%E6%8E%8C%E6%8F%A1%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/</guid>
+      <description>提高技术，掌握核心技术！ 我相信我能干好这个行业！ 算法</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hui305.github.io/post/%E8%AF%BB%E4%B9%A6/%E6%9D%8E%E5%85%89%E8%80%80%E8%A7%82%E5%A4%A9%E4%B8%8B-%E8%AF%BB%E4%B9%A6%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hui305.github.io/post/%E8%AF%BB%E4%B9%A6/%E6%9D%8E%E5%85%89%E8%80%80%E8%A7%82%E5%A4%A9%E4%B8%8B-%E8%AF%BB%E4%B9%A6%E6%80%BB%E7%BB%93/</guid>
+      <description>李光耀观天下 读书总结 中国 1）中国需要一个强大的中央。 一个强大的中央会带来一个和平繁荣的中国。 2）做事不太理会法律和治理制度，是根深蒂固的中国</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hui305.github.io/post/%E8%AF%BB%E4%B9%A6/%E8%B0%88%E8%AF%9D%E7%9A%84%E5%8A%9B%E9%87%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hui305.github.io/post/%E8%AF%BB%E4%B9%A6/%E8%B0%88%E8%AF%9D%E7%9A%84%E5%8A%9B%E9%87%8F/</guid>
+      <description>封闭式问题 or 开放式问题 不要一直问封闭式问题，不然就变成查户口，FBI询问！ 问些开放式的问题，兴趣啊，专业啊等等。 要想让谈话继续下去， 并且有一</description>
     </item>
     
   </channel>
