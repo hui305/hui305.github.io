@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://hui305.github.io/sitemap.xml
+Sitemap: http://hui305.github.io/sitemap.xml
